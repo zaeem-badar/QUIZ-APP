@@ -41,7 +41,7 @@ function render (){
     crrQue.innerHTML = indexVal +1
     totalQue.innerHTML = questions.length
     answerParent.innerHTML=""
-    for(var i =0 ; i<obj.option.length; i++){
+    for(var i =0 ; i<obj.length; i++){
     answerParent.innerHTML +=` <div class="col-md-6 col-sm-4" onclick="chkAns('${obj.correctAns}','${obj.option[i]}')">
     <button class= "btn btn-primary w-100 mt-5 fs-5">${obj.option[i]}</button>
   </div>`
